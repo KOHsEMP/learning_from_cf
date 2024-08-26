@@ -1,0 +1,28 @@
+# dataset configuration
+exp_name: learning_from_cf
+dataset_name: bank
+main_dir: ../
+data_dir: ../dataset
+output_dir: ../output
+
+
+# experiment configuration
+sample_size: 1000 
+test_rate: 0.5
+comp_cols:
+  - all
+n_parallel: 4
+seed: 42
+
+measure_time: True
+use_jax: True
+
+# fixed settings
+knn_metric: euclidean
+
+# method settings
+method: propose
+k: 20            
+round_alpha: 0.5   # round_alpha is used as 'gamma' in this paper
+max_prop_iter: 100 # max_prop_iter is used as 'T' in this paper 
+correct_own_comp: True # If True, we use Eq. (31)

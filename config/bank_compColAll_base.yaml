@@ -1,0 +1,31 @@
+# dataset configuration
+exp_name: learning_from_cf
+dataset_name: bank
+main_dir: ./
+data_dir: ./dataset
+output_dir: ./output
+
+
+# experiment configuration
+sample_size: -1 # all
+test_rate: 0.5
+comp_cols:
+  - all
+
+measure_time: True
+use_jax: True
+
+# fixed settings
+knn_metric: euclidean
+
+
+
+# add args in shellscript
+# method      
+# k            
+# round_alpha   # round_alpha is used as 'gamma' in this paper
+# max_prop_iter # max_prop_iter is used as 'T' in this paper 
+# correct_own_comp
+
+# n_parallel
+# seed

@@ -1,0 +1,25 @@
+# dataset configuration
+exp_name: learning_from_cf
+dataset_name: adult
+main_dir: ./
+data_dir: ./dataset
+output_dir: ./output
+
+# experiment configuration
+sample_size: -1 # all
+test_rate: 0.5
+comp_cols:
+  - all
+
+measure_time: True
+use_jax: True
+
+# add args in shellscript
+method : IPAL
+
+# k
+# max_prop_iter
+# ipal_alpha
+
+# n_parallel
+# seed

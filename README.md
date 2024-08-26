@@ -51,7 +51,7 @@ learning_from_cl/
   * Unzip `bank+marketing.zip`, and place all the files inside `bank.zip` into `learning_from_cl/data/bank/`.
 
 * [Adult](https://archive.ics.uci.edu/dataset/2/adult)
-  *　Unzip `adult.zip`, and place all the files located directly under it into `learning_from_cl/data/adult/`.
+  * Unzip `adult.zip`, and place all the files located directly under it into `learning_from_cl/data/adult/`.
 
 ## How to Execute Experiments
 
@@ -106,7 +106,7 @@ The explanation of the main arguments is follow:
 
 * `max_prop_iter`: This parameter specifies the value of the hyperparameter 'T' for the proposed method, which represents the number of confidence propagation iterations.
 
-* `correct_own_comp`: When this is `True`, the process described in Eq. (31) of this paper will be executed in the proposed method.
+* `correct_own_comp`: When this is `True`, the process described in Eq. (24) of this paper will be executed in the proposed method.
 
 **IPAL Settings:**
 

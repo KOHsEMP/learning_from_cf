@@ -16,7 +16,7 @@ def arg_parser():
     
     parser.add_argument("--knn_metric", choices=['euclidean', 'gaussian'], help="This parameter specifies the distance metric to be used in KNN. In this paper, `euclidean` was used. Please select from ['euclidean', 'gaussian']") 
     parser.add_argument("--k", type=int, help="This parameter specifies the value of the hyperparameter 'k' for the proposed method, which represents the number of neighbors in KNN.")
-    parser.add_argument("--correct_own_comp", type=bool, help='When this is `True`, the process described in Eq. (31) of this paper will be executed in the proposed method.')
+    parser.add_argument("--correct_own_comp", type=bool, help='When this is `True`, the process described in Eq. (24) of this paper will be executed in the proposed method.')
     parser.add_argument("--max_prop_iter", type=int, help="This parameter specifies the value of the hyperparameter 'T' for the proposed method, which represents the number of confidence propagation iterations.") 
     parser.add_argument("--prop_threshold", type=float, default=0.0001, help="stop threshold of propagating iteration")
     
